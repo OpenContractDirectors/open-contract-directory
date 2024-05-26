@@ -13,10 +13,10 @@
   </p>
   <p class="text-center text-lg">
     <a
-      href="https://github.com/OpenContractDirectors/open-contract-directory"
+      href="https://github.com/OpenContractDirectors/open-contract-directory?tab=readme-ov-file#listing-requirements-draft"
       class="hover:underline">Listing Requirements</a
     ><span class="ml-24"></span><a
-      href="https://github.com/OpenContractDirectors/open-contract-directory"
+      href="https://github.com/OpenContractDirectors/open-contract-directory?tab=readme-ov-file#how-it-works"
       class="hover:underline">How It Works</a
     >
   </p>
