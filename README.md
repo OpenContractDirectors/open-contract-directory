@@ -40,6 +40,12 @@ Step 3: Deploy the contract yourself.
 
 ## In This Repo
 
+### Screenshots
+
+![screenshot1](./screenshots/screenshot1.png?raw=true "Screenshot1")
+
+![screenshot2](./screenshots/screenshot2.png?raw=true "Screenshot2")
+
 ### Contracts
 
 The registry is deployed on Sepolia at address `0xb6fA4E3BBfd97bc5C26d3F39947f9b1aF1828B36`.
