@@ -22,7 +22,9 @@
 
     const title = userdocTitle || devdocTitle || '';
     const body =
-      userdocNotice || devdocNotice || 'Contract metadata does not contain a description.';
+      userdocNotice ||
+      devdocNotice ||
+      "The contract's metadata file does not contain a description.";
     return title + (title ? ': ' : '') + body;
   }
 
@@ -38,7 +40,7 @@
   <h1 class="text-3xl font-bold mb-4">OCD #{contractID}: {name}</h1>
   <div class="flex flex-col gap-4">
     <p class="text-gray-600 mb-6">{description || 'No description available.'}</p>
-    <DeploymentsSection {deployments} />
     <FrontendsSection {frontends} />
+    <DeploymentsSection {deployments} />
   </div>
 </main>

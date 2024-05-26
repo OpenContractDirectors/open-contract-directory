@@ -13,7 +13,7 @@
   <div><span class="mb-2 text-lg">Pick a certifier you trust:</span></div>
 
   <select
-    class="border bg-red-200 p-2 rounded shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    class="border bg-gray-200 p-2 rounded shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
     on:change={handleSelect}
     bind:value={selected}
   >
