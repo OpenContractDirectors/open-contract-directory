@@ -2,6 +2,8 @@
 
 The Open Contract Directory (OCD) is a public goods repository of free, libre, ownerless, uncensorable dapps.
 
+###### [ETHBerlin Pitch Deck](./OCD-deck-ethberlin.pdf)
+
 ## Manifesto
 
 When a dapp gets popular, people come to rely on it. But who controls that dapp? What are their incentives? Can they hike up fees? Can they implement geoblocking or censor addresses? Are they vulnerable to hacks or rugpulls (secure website hosting, upgradable contracts)? Can they track or sell user data?
