@@ -1,0 +1,530 @@
+[
+  {
+    "type": "function",
+    "name": "certifyContract",
+    "inputs": [
+      {
+        "name": "contractID",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "certifyFrontend",
+    "inputs": [
+      {
+        "name": "frontendID",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getContract",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Registry.Contract",
+        "components": [
+          {
+            "name": "metadataHash",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getContractCertificate",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Registry.ContractCertificate",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "certifier",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getDeployment",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Registry.Deployment",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "chainID",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "contractAddress",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getFrontend",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Registry.Frontend",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getFrontendCertificate",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Registry.FrontendCertificate",
+        "components": [
+          {
+            "name": "frontendID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "certifier",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getNumContractCertificates",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getNumContracts",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getNumDeployments",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getNumFrontendCertificates",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getNumFrontends",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "registerContract",
+    "inputs": [
+      {
+        "name": "c",
+        "type": "tuple",
+        "internalType": "struct Registry.Contract",
+        "components": [
+          {
+            "name": "metadataHash",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "registerDeployment",
+    "inputs": [
+      {
+        "name": "d",
+        "type": "tuple",
+        "internalType": "struct Registry.Deployment",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "chainID",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "contractAddress",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "registerFrontend",
+    "inputs": [
+      {
+        "name": "f",
+        "type": "tuple",
+        "internalType": "struct Registry.Frontend",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "ContractCertified",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "c",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct Registry.ContractCertificate",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "certifier",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ContractRegistered",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "c",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct Registry.Contract",
+        "components": [
+          {
+            "name": "metadataHash",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DeploymentRegistered",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "d",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct Registry.Deployment",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "chainID",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "contractAddress",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FrontendCertified",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "c",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct Registry.FrontendCertificate",
+        "components": [
+          {
+            "name": "frontendID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "certifier",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FrontendRegistered",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "f",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct Registry.Frontend",
+        "components": [
+          {
+            "name": "contractID",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "ipfsHash",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "ContractNotFound",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "FrontendNotFound",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  }
+]
