@@ -79,7 +79,7 @@ REGISTRY_ADDRESS=<contract address> FRONTEND_ID=0 forge script --rpc-url <RPC UR
 The frontend code can be found in the `/frontend` subdirectory. Install dependencies with `npm install` and add a `.env` file with the following variables:
 
 ```
-ALPHEMY_API_KEY=...
+ALCHEMY_API_KEY=...
 PUBLIC_REGISTRY_ADDRESS=0xb6fA4E3BBfd97bc5C26d3F39947f9b1aF1828B36
 ```
 
